@@ -50,7 +50,6 @@
 
             var best = null;
             $.each(difficultyScale, function(index, item) {
-              alert(item.total);
               if (best == null || Math.abs(item.total - total) < Math.abs(best.total - total)) {
                 best = item;
               }
