@@ -31,6 +31,14 @@
             return x.name < y.name ? -1 : 1;
           });
 
+          data.difficulty.villain.sort(function(x, y){
+            return x.name < y.name ? -1 : 1;
+          });
+
+          data.difficulty.env.sort(function(x, y){
+            return x.name < y.name ? -1 : 1;
+          });
+
           var html = template(data.difficulty);
           placeHolder.append(html);
 
